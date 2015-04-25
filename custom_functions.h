@@ -56,19 +56,6 @@ bool VectorCheck(int value, vector <int> MyVector){
 	return flag;
 }
 
-void timer(){
-	int x = 0;
-	int i = 0;
-
-	while (true){
-
-		++i;
-		if ((i / CLOCKS_PER_SEC) > 1) ++x;
-		cout << x << '\r';
-
-	}
-
-}
 
 /*-------------------------------------------------------------*/
 
@@ -83,4 +70,17 @@ void draw_board(char playBoard[][75], int score){ //Draws a play board 23x75 big
 		}
 		cout << '\n';
 	}
+}
+
+void quit_game(int score, int seconds){ //Displays score and quits after x secconds.
+
+	system("cls");
+	cout << "GAME OVER!!!!\n\n";
+	cout << "You got a score of: " << score << '\n';
+
+	for (int i = 0; i <= seconds; ++i){
+		Sleep(1000);
+		cout << "The program will close in: " << 5 - i << " seconds." << endl;
+	}
+	exit(1);
 }
