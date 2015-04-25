@@ -8,6 +8,7 @@
 */
 
 #include "custom_functions.h"
+
 /*---------------- Function prototypes ----------------*/
 void draw_board(char playBoard[][75], int score);
 void quit_game(int score, int seconds);
