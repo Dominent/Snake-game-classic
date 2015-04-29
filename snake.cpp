@@ -14,8 +14,10 @@ Snake::Snake(int in_yAxis, int in_xAxis, int in_val1x, int in_val2x, int in_val1
 
 }
 
-bool Snake::move(char playBoard[][75], int dirInput){ //char playBoard[][75], char Snake[][75], int dirInput)
-				
+bool Snake::move(int dirInput){ 
+
+	playBoard[21][1] = '*';
+
 		if (dirInput == 0){ //Default
 
 			playBoard[yAxis][xAxis] = '*';

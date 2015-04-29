@@ -64,12 +64,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="frame.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="snake.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="custom_functions.h" />
+    <ClInclude Include="frame.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="snake.h" />
   </ItemGroup>

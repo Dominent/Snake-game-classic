@@ -128,19 +128,3 @@ void menu::options(){ // Done(100%)
 		else system("cls");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
